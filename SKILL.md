@@ -198,7 +198,7 @@ Une chaîne **doit** être entre guillemets si :
 - elle est vide, commence/finit par un espace,
 - elle vaut littéralement `true`, `false`, `null`,
 - elle ressemble à un nombre (`"42"`, `"1e3"`, `"05"`),
-- elle contient `:`, `"`, `\`, `[`, `]`, `{`, `}`, ou le délimiteur actif,
+- elle contient `:`, `"`, ``, `[`, `]`, `{`, `}`, ou le délimiteur actif,
 - elle commence par `-`.
 
 Sinon, pas de guillemets. Les caractères unicode (accents, emojis, kanji) ne déclenchent pas de quoting.

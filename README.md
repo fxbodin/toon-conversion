@@ -24,15 +24,15 @@ Déposer le dossier `toon-conversion/` dans tes skills utilisateur via l'interfa
 
 ### Pour Claude Code
 
-\`\`\`bash
+```bash
 git clone https://github.com/fxbodin/toon-conversion.git ~/.claude/skills/toon-conversion
-\`\`\`
+```
 
 ### Dépendances Python pour le script
 
-\`\`\`bash
+```bash
 pip install toon-formatter tiktoken
-\`\`\`
+```
 
 `tiktoken` est optionnel : sans lui, le skill bascule sur une heuristique structurelle pour rendre son verdict.
 
@@ -40,26 +40,26 @@ pip install toon-formatter tiktoken
 
 ### Mode analyse (décider avant d'agir)
 
-\`\`\`bash
+```bash
 python scripts/convert.py analyze mon_fichier.json
-\`\`\`
+```
 
 Sortie type :
 
-\`\`\`
+```
 JSON compact:  168 tokens
 TOON:           94 tokens
 TOON vs JSON compact: -44.0%
 Verdict: CONVERT
 Raison: tableau uniforme (10 lignes × 4 champs), gain significatif.
-\`\`\`
+```
 
 ### Conversion
 
-\`\`\`bash
+```bash
 python scripts/convert.py to-toon mon_fichier.json -o mon_fichier.toon
 python scripts/convert.py to-json mon_fichier.toon -o mon_fichier.json
-\`\`\`
+```
 
 Le round-trip est lossless : tout JSON valide redevient identique après aller-retour.
 
@@ -85,7 +85,7 @@ Détails et benchmarks complets : voir `references/benchmarks.md`.
 
 ## Structure du repo
 
-\`\`\`
+```
 toon-conversion/
 ├── SKILL.md                  Skill principal lu par Claude
 ├── references/
@@ -93,7 +93,7 @@ toon-conversion/
 │   └── benchmarks.md         Benchmarks officiels et mesures locales
 └── scripts/
     └── convert.py            Outil CLI de conversion et mesure
-\`\`\`
+```
 
 ## Licence
 
