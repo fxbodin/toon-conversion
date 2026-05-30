@@ -101,6 +101,6 @@ MIT — voir [LICENSE](LICENSE).
 
 ## Auteur
 
-François-Xavier Bodin — [fxbodin.com](https://fxbodin.com)
+François-Xavier Bodin — [fxbodin.com](https://www.fxbodin.com)
 
 Skill construit avec l'assistance de Claude (Anthropic).
